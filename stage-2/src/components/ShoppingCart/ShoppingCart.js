@@ -17,7 +17,7 @@ class ShoppingCart extends Component {
     }
 
     render() {
-        let shoppingCartDisplay = this.state.shoppingCart.map((element, index) => {
+        let shoppingCartDisplay = this.state.shoppingCart.map((element, index) => 
             <div className="shopping-cart-product-container">
                 <img src={element.image} alt="" />
                 <div className="shopping-cart-info">
@@ -28,7 +28,7 @@ class ShoppingCart extends Component {
                     </div>
                 </div>
             </div>
-        })
+        )
         return (
             <div className="shopping-cart-container">
                 {shoppingCartDisplay[0] ?
